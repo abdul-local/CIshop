@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Login CIShop</title>
+    <title>Register CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/navbar-fixed/">
 
@@ -77,21 +77,31 @@
 <div class="col-md-8 mx-auto">
   <div class="card">
   <div class="card-header">
-    Login
+    Register
   </div>
   <div class="card-body">
    <form action="">
        <div class="form-group">
+           <label>Nama</label>
+           <input type="text" name="nama" class="form-control" required autofocus>
+           <small class="form-text text-danger">Nama Harus di isi</small>
+       </div>
+       <div class="form-group">
            <label>E-Mail</label>
-           <input type="email" name="email" class="form-control" required autofocus>
+           <input type="email" name="email" class="form-control" required >
            <small class="form-text text-danger">E-Mail Harus di isi</small>
        </div>
        <div class="form-group">
-           <label>Password</label>
+           <label>Pasword</label>
            <input type="password" name="password" class="form-control" required>
            <small class="form-text text-danger">Password Harus di isi</small>
        </div>
-       <button type="submit" class="btn btn-primary">Loign</button>
+       <div class="form-group">
+           <label>Konfirmasi Pasword</label>
+           <input type="password" name="password" class="form-control" required>
+           <small class="form-text text-danger">Password Harus sama </small>
+       </div>
+       <button type="submit" class="btn btn-primary">Regiter</button>
    </form>
   </div>
 </div>  
