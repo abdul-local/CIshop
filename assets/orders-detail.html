@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>CIShop Home</title>
+    <title>Orders-detail CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/navbar-fixed/">
 
@@ -94,39 +94,48 @@
     <div class="col-md-9">
        <div class="card">
          <div class="card-header">
-             Daftar Orders
+             Detail Orders #0135674
+             <div class="float-right">
+                 <span class="badge badge-pill badge-info">Menunggu Pembayaran</span>
+             </div>
          </div> 
          <div class="card-body">
-             <table class="table">
-                 <thead>
-                     <tr>
-                         <th>Nomer Order</th>
-                         <th>Tanggal</th>
-                         <th>Total</th>
-                         <th>Status</th>
-                     </tr>
-                 </thead>
-                 <tbody>
-                     <tr>
-                         <td><a href="/oders-detail.html"><strong>#0135674</strong></a></td>
-                         <td>2020/08/27</td>
-                         <td>Rp.200.000-</td>
-                         <td><span class="badge badge-pill badge-warning">Menunggu Pembayaran</span></td>
-                     </tr>
-                      <tr>
-                         <td><a href="/oders-detail.html"><strong>#0135739</strong></a></td>
-                         <td>2020/08/22</td>
-                         <td>Rp.200.000-</td>
-                         <td><span class="badge badge-pill badge-success">Dikirim</span></td>
-                     </tr>
-                      <tr>
-                         <td><a href="/oders-detail.html"><strong>#0134648</strong></a></td>
-                         <td>2020/07/20</td>
-                         <td>Rp.200.000-</td>
-                         <td><span class="badge badge-pill badge-danger">Dibatalkan</span></td>
-                     </tr>
-                 </tbody>
-             </table>
+            <p>Nama: Nama Penerima</p>
+            <p>Telephon: 081913520891 </p>
+            <p>Almat: jln kebun nanas No 23 kemayoran, jakarta Selatan</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th class="text-center">Harga</th>
+                        <th class="text-center">Jumlah</th>
+                        <th class="text-center">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><img src="https://placehold.co/50x50" alt=""><strong>Produk Title</strong></p>
+                        </td>
+                        <td class="text-center">
+                            RP.100.000,-
+                        </td>
+                        <td class="text-center">
+                        1
+                        </td>
+                        <td class="text-center">
+                            Rp.100.000
+                        </td>
+                    </tr>
+                    <tr>
+                    <td colspan="3"><strong>Total: </strong></td>
+                    <td class="text-center"><strong>Rp.100.000,00</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+         <div class="card-footer">
+             <a href="/orders-confirm.html" class="btn btn-success">Konfirmasi Pembayaran</a>
          </div> 
        </div>
     </div>
