@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Admin CIShop</title>
+    <title>Admin Form CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/navbar-fixed/">
 
@@ -75,63 +75,52 @@
 </nav>
 <main role="main" class="container">
 <div class="col-md-10 mx-auto">
-  <div class="card">
-  <div class="card-header mb-3">
-    <span>Pengguna</span>
-    <a href="/admin-user-form.html" class="btn btn-sm btn-secondary">Tambah</a>
-    <div class="float-right">
-        <form action="">
-            <div class="input-group">
-             <input type="text" class="form-control form-control-sm text-center" placeholder="Cari">
-             <div class="form-input-append">
-                 <button class="btn btn-secondary btn-sm" type="submit">
-                     <i class="fas fa-search"></i>
-                 </button>
-                 <a href="#" class="btn btn-secondary btn-sm">
-                     <i class="fas fa-eraser"></i>
-                 </a>
-             </div>
-            </div>
-        </form>
-    </div>
+  <div class="card mb-3">
+  <div class="card-header">
+    <span>Tambah Pengguna</span>
+    
   </div>
   <div class="card-body">
-   <table class="table">
-       <thead>
-           <th scope="col">#</th>
-           <th scope="col">Pengguna</th>
-           <th scope="col">E-mail</th>
-           <th scope="col">Role</th>
-           <th scope="col">Status</th>
-           <th scope="col"></th>
-       </thead>
-       <tbody>
-           <tr>
-               <td>1</td>
-               <td>
-                   <p>
-                       <img src="https://placehold.co/70x70" alt="">
-                       Admin
-                   </p>
-               </td>
-               <td>abdullah.hamzan@gmail.com</td>
-               <td>Admin</td>
-               <td>Aktif</td>
-               <td>
-                  <form action="">
-                      <a href="#">
-                          <button class="btn btn-sm">
-                              <i class="fas fa-edit text-info"></i>
-                          </button>
-                          <button class="btn btn-sm" type="submit"  onclick ="return confirm('Are you sure ?')">
-                              <i class="fas fa-trash text-danger"></i>
-                          </button>
-                      </a>
-                  </form>
-               </td>
-           </tr>
-       </tbody>
-   </table>
+   <form action="">
+       <div class="form-group">
+           <label>Nama</label>
+           <input type="text" name="nama" class="form-control" required autofocus>
+           <small class="form-text text-danger">Nama Harus di isi</small>
+       </div>
+       <div class="form-group">
+           <label>E-Mail</label>
+           <input type="email" name="email" class="form-control" required >
+           <small class="form-text text-danger">E-Mail Harus di isi</small>
+       </div>
+       <div class="form-group">
+           <label>Pasword</label>
+           <input type="password" name="password" class="form-control" required>
+           <small class="form-text text-danger">Password Harus di isi</small>
+       </div>
+       <div class="form-group">
+           <label for="">Role</label>
+           <select name="role" id="" class="form-control">
+               <option value="admin">Admin</option>
+               <option value="mamber">Mamber</option>
+           </select>
+       </div>
+       <div class="group">
+           <label for="">Status</label><br>
+           <div class="form-check-inline">
+           <input type="radio" name="status" class="form-check-input" value="1">
+           <label class="form-check-label">Aktif</label>
+           </div>
+           <div class="form-check-inline">
+           <input type="radio" name="status"class="form-check-input" value="1">
+           <label class="form-check-label">Non-Aktif</label>
+           </div>
+       </div>
+       <div class="form-group">
+           <label for="">Photo</label>
+           <input type="file" name="photo" id="" class="form-control">
+       </div>
+       <button type="submit" class="btn btn-primary">Regiter</button>
+   </form>
   </div>
 </div>  
 </div>
