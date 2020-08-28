@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Admin Product CIShop</title>
+    <title>Admin Order CIShop</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/navbar-fixed/">
 
@@ -77,8 +77,7 @@
 <div class="col-md-10 mx-auto">
   <div class="card">
   <div class="card-header mb-3">
-    <span>Produk</span>
-    <a href="/admin-user-form.html" class="btn btn-sm btn-secondary">Tambah</a>
+    <span>Order</span>
     <div class="float-right">
         <form action="">
             <div class="input-group">
@@ -97,60 +96,36 @@
   </div>
   <div class="card-body">
    <table class="table">
-       <thead>
-           <th scope="col">#</th>
-           <th scope="col">Produk</th>
-           <th scope="col">Kategori</th>
-           <th scope="col">Harga</th>
-           <th scope="col">Stock</th>
-           <th scope="col"></th>
-       </thead>
-       <tbody>
-           <tr>
-               <td>1</td>
-               <td>
-              <p><img src="https://placehold.co/70x70" alt=""><strong>Leptops core i9 2020</strong></p>
-               </td>
-               <td><span class="badge badge-primary"><i class="fas fa-tags"></i>Leptops</span></td>
-               <td>Rp.200.000,-</td>
-               <td>Tersedia</td>
-               <td>
-                  <form action="">
-                      <a href="#">
-                          <button class="btn btn-sm">
-                              <i class="fas fa-edit text-info"></i>
-                          </button>
-                          <button class="btn btn-sm" type="submit"  onclick ="return confirm('Are you sure ?')">
-                              <i class="fas fa-trash text-danger"></i>
-                          </button>
-                      </a>
-                  </form>
-               </td>
-           </tr>
-           <tr>
-               <td>2</td>
-               <td>
-              <p><img src="https://placehold.co/70x70" alt=""><strong>Xiomi 5 plus</strong></p>
-               </td>
-               <td><span class="badge badge-primary"><i class="fas fa-tags"></i>Smartphone</span></td>
-               <td>Rp.200.000,-</td>
-               <td>Tersedia</td>
-               <td>
-                  <form action="">
-                      <a href="#">
-                          <button class="btn btn-sm">
-                              <i class="fas fa-edit text-info"></i>
-                          </button>
-                          <button class="btn btn-sm" type="submit"  onclick ="return confirm('Are you sure ?')">
-                              <i class="fas fa-trash text-danger"></i>
-                          </button>
-                      </a>
-                  </form>
-               </td>
-           </tr>
-       </tbody>
-   </table>
-      <nav aria-label="Page navigation example">
+                 <thead>
+                     <tr>
+                         <th>Nomer Order</th>
+                         <th>Tanggal</th>
+                         <th>Total</th>
+                         <th>Status</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td><a href="/oders-detail.html"><strong>#0135674</strong></a></td>
+                         <td>2020/08/27</td>
+                         <td>Rp.200.000-</td>
+                         <td><span class="badge badge-pill badge-warning">Menunggu Pembayaran</span></td>
+                     </tr>
+                      <tr>
+                         <td><a href="/oders-detail.html"><strong>#0135739</strong></a></td>
+                         <td>2020/08/22</td>
+                         <td>Rp.200.000-</td>
+                         <td><span class="badge badge-pill badge-success">Dikirim</span></td>
+                     </tr>
+                      <tr>
+                         <td><a href="/oders-detail.html"><strong>#0134648</strong></a></td>
+                         <td>2020/07/20</td>
+                         <td>Rp.200.000-</td>
+                         <td><span class="badge badge-pill badge-danger">Dibatalkan</span></td>
+                     </tr>
+                 </tbody>
+             </table>
+    <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-left">
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
